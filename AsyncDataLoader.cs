@@ -11,7 +11,7 @@ namespace gribov.pro
     public sealed class AsyncDataLoader<T>
     {
         /// <summary>
-        /// Инициализирует новый объек.
+        /// Инициализирует новый объект.
         /// </summary>
         public AsyncDataLoader()
         {
