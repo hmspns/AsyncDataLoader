@@ -44,20 +44,11 @@ namespace gribov.pro
                         sb.AppendLine(result);
                     }
 
-                    
-
                     Invoke(new Action(() =>
                         {
                             label1.Text = sb.ToString();
                         }));
-                }).ContinueWith((results) =>
-                    {
-                        Invoke(new Action(() =>
-                            {
-                                label1.ForeColor = Color.Red;
-                                label1.Text = results.Exception.ToString();
-                            }));
-                    }, TaskContinuationOptions.OnlyOnFaulted);
+                });
         }
 
         private async Task<string[]> LoadDataAsync(TimeSpan period, int count, TimeSpan emergency)
@@ -85,7 +76,6 @@ namespace gribov.pro
                             (() =>
                             {
                                 Thread.Sleep(TimeSpan.FromSeconds(0.01));
-                                throw new Exception("wow");
                                 return "Выполнено за 0.01 секунды";
                             }),
                 };
