@@ -87,6 +87,5 @@ namespace gribov.pro.Async.Example
             loader.EmergencyPeriod = emergency;
             return await loader.GetResultsAsync();
         }
-
     }
 }
