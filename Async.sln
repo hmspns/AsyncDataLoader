@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Async", "Async.csproj", "{C17D362C-D4C1-49A4-86DB-108D35D2DA45}"
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncDataLoader", "Library\AsyncDataLoader.csproj", "{C17D362C-D4C1-49A4-86DB-108D35D2DA45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{21F3772C-9A5D-4D6D-865B-2F09E0AEA569}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +17,10 @@ Global
 		{C17D362C-D4C1-49A4-86DB-108D35D2DA45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C17D362C-D4C1-49A4-86DB-108D35D2DA45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C17D362C-D4C1-49A4-86DB-108D35D2DA45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21F3772C-9A5D-4D6D-865B-2F09E0AEA569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21F3772C-9A5D-4D6D-865B-2F09E0AEA569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21F3772C-9A5D-4D6D-865B-2F09E0AEA569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21F3772C-9A5D-4D6D-865B-2F09E0AEA569}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace gribov.pro
+namespace gribov.pro.Async.Example
 {
     static class Program
     {

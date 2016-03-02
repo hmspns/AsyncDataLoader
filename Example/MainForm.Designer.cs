@@ -1,4 +1,4 @@
-﻿namespace gribov.pro
+﻿namespace gribov.pro.Async.Example
 {
     partial class MainForm
     {
