@@ -61,9 +61,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 13);
+            this.label2.Size = new System.Drawing.Size(136, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Время для загрузки (сек)";
+            this.label2.Text = "Load data period (seconds)";
             // 
             // cbPeriod
             // 
@@ -83,9 +83,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 49);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(197, 13);
+            this.label3.Size = new System.Drawing.Size(111, 13);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Минимальное количество элементов";
+            this.label3.Text = "Minimum results count";
             // 
             // cbCount
             // 
@@ -118,9 +118,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(15, 89);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(208, 13);
+            this.label4.Size = new System.Drawing.Size(183, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Дополнительное время ожидания (сек)";
+            this.label4.Text = "Additional time to load data (seconds)";
             // 
             // MainForm
             // 
@@ -136,7 +136,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Name = "MainForm";
-            this.Text = "Асинхронная загрузка";
+            this.Text = "AsyncDataLoader example";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -24,7 +24,7 @@ namespace gribov.pro.Async.Example
 
 #if DEBUG
             label1.ForeColor = Color.Red;
-            label1.Text = "В отладочном режиме отмена асинхронных\nопераций отключена.\nСкомпилируйте сборку в релизную версию";
+            label1.Text = "Cancellation of loading is disabled while debugging.\nTo check this opportunity please compile assembly\nto release version";
 #endif
         }
 
@@ -59,23 +59,27 @@ namespace gribov.pro.Async.Example
                         new Func<string>
                             (() =>
                             {
-                                Thread.Sleep(TimeSpan.FromSeconds(1.7));
-                                return "Выполнено за 1.7 секунды";
+                                double sleep = 1.7d;
+                                Thread.Sleep(TimeSpan.FromSeconds(sleep));
+                                return $"Loaded in {sleep} second";
                             }), 
                             (() =>
                             {
-                                Thread.Sleep(TimeSpan.FromSeconds(1));
-                                return "Выполнено за 1 секунду";
+                                double sleep = 1d;
+                                Thread.Sleep(TimeSpan.FromSeconds(sleep));
+                                return $"Loaded in {sleep} second";
                             }),
                             (() =>
                             {
-                                Thread.Sleep(TimeSpan.FromSeconds(1.25));
-                                return "Выполнено за 1.25 секунды";
+                                double sleep = 1.25d;
+                                Thread.Sleep(TimeSpan.FromSeconds(sleep));
+                                return $"Loaded in {sleep} second";
                             }),
                             (() =>
                             {
-                                Thread.Sleep(TimeSpan.FromSeconds(0.01));
-                                return "Выполнено за 0.01 секунды";
+                                double sleep = 0.01d;
+                                Thread.Sleep(TimeSpan.FromSeconds(sleep));
+                                return $"Loaded in {sleep} second";
                             }),
                 };
             loader.LoadDataPeriod = period;
